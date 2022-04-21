@@ -1,0 +1,18 @@
+[package]
+name = "beggarbot"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+matrix-sdk = "0.4"
+matrix-sdk-common = "0.4"
+tokio = { version = "1.17.0", features = ["full"] }
+anyhow = { version = "1.0", optional = true }
+url = "2.2"
+dirs = "3.0.2"
+config = { version = "0.13", features = ["yaml"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.8"
+serde_derive = "1.0"
